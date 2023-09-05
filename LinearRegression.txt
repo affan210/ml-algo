@@ -1,0 +1,13 @@
+Types of linear regression model to use:
+1. Simple Linear Regression: For a single independent variable.
+2. Multiple Linear Regression: For multiple independent variables.
+
+Training:
+The goal is to find the coefficients b0, b1, ..., bn that minimize the error between predicted values and actual values. For simple linear regression, the model is represented as:
+y = b0 + b1.x​
+
+For multiple linear regression with n independent variables:
+y = b0 + b1.x1 + b2.x2 + ...+ bn.xn
+​
+
+To find these coefficients, you can use the least squares method, which minimizes the sum of squared differences between actual and predicted values. 
