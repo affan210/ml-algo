@@ -11,3 +11,56 @@ y = b0 + b1.x1 + b2.x2 + ...+ bn.xn
 ​
 
 To find these coefficients, you can use the least squares method, which minimizes the sum of squared differences between actual and predicted values. 
+
+# Algorithms for Regression Problems
+Here are some commonly used regression algorithms:
+1. Simple Linear Regression: 
+    Used when there is a linear relationship between the input feature and the target variable.
+
+2. Multiple Linear Regression: 
+    Extends simple linear regression to multiple input features.
+
+3. Polynomial Regression:
+    Captures nonlinear relationships between features and the target variable by introducing polynomial terms into the regression equation.
+
+4. Ridge Regression:
+    A form of linear regression that includes L2 regularization to prevent overfitting.
+
+5. Lasso Regression:
+    Similar to ridge regression but uses L1 regularization, which can lead to feature selection by pushing some feature coefficients to zero.
+
+6. Elastic Net Regression:
+    Combines L1 (Lasso) and L2 (Ridge) regularization to balance their effects.
+
+7. Support Vector Regression (SVR):
+    An extension of Support Vector Machines (SVM) for regression tasks. It uses a kernel function to map the data into a higher-dimensional space and find a hyperplane that best fits the data.
+
+8. Decision Tree Regression:
+    Uses decision trees to model the relationship between features and the target variable. It can handle both linear and nonlinear relationships.
+
+9. Random Forest Regression:
+    Ensembles of decision trees that can provide more accurate and stable predictions by averaging or taking a majority vote from multiple trees.
+
+10. Gradient Boosting Regression:
+    Algorithms like Gradient Boosting Trees (GBM), XGBoost, LightGBM, and CatBoost build an ensemble of decision trees sequentially to improve predictive accuracy.
+
+11. K-Nearest Neighbors (KNN) Regression:
+    Predicts the target value by averaging the values of its k-nearest neighbors in the feature space.
+
+12. Neural Networks (Deep Learning):
+    Deep neural networks can be used for regression tasks by training them to predict continuous values.
+
+13. Bayesian Regression:
+    Uses Bayesian techniques to estimate the posterior distribution of model parameters and make predictions based on probability distributions.
+
+14. Gaussian Process Regression:
+    Models the target variable as a Gaussian process, which allows for probabilistic predictions and uncertainty estimation.
+
+15. Quantile Regression:
+    Estimates different quantiles of the target variable's distribution, making it useful for robust regression and handling outliers.
+
+16. Isotonic Regression:
+    Fits a piecewise constant, non-decreasing function to the data. It's suitable for problems where the relationship between the features and the target is monotonic.
+
+17. Robust Regression:
+    Methods like Huber Regression and RANSAC are robust to outliers and noise in the data.
