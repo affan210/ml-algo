@@ -1,0 +1,20 @@
+There are five types of NB models under the scikit-learn library:
+
+Gaussian Naive Bayes: 
+gaussiannb is used in classification tasks and it assumes that feature values follow a gaussian distribution.
+
+Multinomial Naive Bayes: 
+It is used for discrete counts. For example, let’s say,  we have a text classification problem. 
+Here we can consider Bernoulli trials which is one step further and instead of “word occurring in the document”, 
+we have “count how often word occurs in the document”, you can think of it as “number of times outcome number x_i is observed over the n trials”.
+
+Bernoulli Naive Bayes: 
+The binomial model is useful if your feature vectors are boolean (i.e. zeros and ones). 
+One application would be text classification with ‘bag of words’ model where the 1s & 0s are “word occurs in the document” 
+and “word does not occur in the document” respectively.
+
+Complement Naive Bayes: 
+It is an adaptation of Multinomial NB where the complement of each class is used to calculate the model weights. 
+So, this is suitable for imbalanced data sets and often outperforms the MNB on text classification tasks.
+Categorical Naive Bayes: Categorical Naive Bayes is useful if the features are categorically distributed. 
+We have to encode the categorical variable in the numeric format using the ordinal encoder for using this algorithm.

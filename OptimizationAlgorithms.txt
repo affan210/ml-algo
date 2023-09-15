@@ -1,0 +1,49 @@
+There are various optimization algorithms used in machine learning to optimize loss functions when training models. 
+These algorithms aim to find the optimal set of model parameters (weights and biases) that minimize the loss function.
+Some of the most commonly used optimization algorithms:
+
+Gradient Descent: 
+Gradient Descent is the foundational optimization algorithm in machine learning. It works by iteratively adjusting model parameters
+ in the direction of steepest descent of the loss function with respect to those parameters. 
+There are different variants of Gradient Descent, including:
+    Stochastic Gradient Descent (SGD): 
+        Updates the parameters using a single random training example at each iteration.
+    Mini-Batch Gradient Descent: 
+        Updates the parameters using a small random subset (mini-batch) of the training data at each iteration.
+    Batch Gradient Descent: 
+        Updates the parameters using the entire training dataset at each iteration.
+
+Adam: 
+Adam (short for Adaptive Moment Estimation) is a popular optimization algorithm that combines the benefits of both Momentum and RMSprop. 
+It adapts the learning rate for each parameter and maintains two moving averages for the gradient and the squared gradient.
+
+RMSprop: 
+RMSprop (Root Mean Square Propagation) is an optimization algorithm that adapts the learning rate for each parameter by dividing the learning rate by a running average of the squared gradient.
+
+Adagrad: 
+Adagrad (Adaptive Gradient Descent) adjusts the learning rates individually for each parameter based on the historical gradient information. 
+It gives larger updates to parameters with infrequent updates and smaller updates to frequently updated parameters.
+
+Nadam: 
+Nadam combines the ideas of Nesterov's Accelerated Gradient (NAG) and Adam. 
+It uses NAG's momentum term and Adam's adaptive learning rates.
+
+LBFGS (Limited-memory Broyden-Fletcher-Goldfarb-Shanno): 
+LBFGS is a quasi-Newton optimization algorithm that approximates the Hessian matrix of the loss function to make more informed parameter updates. 
+It is often used for smaller-scale optimization problems.
+
+Conjugate Gradient: 
+Conjugate Gradient is another optimization algorithm that works well for unconstrained optimization problems. 
+It uses conjugate directions to iteratively find the minimum of the loss function.
+
+Proximal Gradient Descent: 
+This optimization algorithm is commonly used for problems with sparsity-inducing regularization terms, such as L1 regularization. 
+It combines gradient descent with a proximal operator to enforce sparsity.
+
+Evolutionary Algorithms: 
+These are population-based optimization algorithms inspired by natural selection, such as Genetic Algorithms and Particle Swarm Optimization (PSO). 
+They are used in various optimization tasks, including hyperparameter tuning.
+
+Bayesian Optimization: 
+Bayesian optimization uses probabilistic models to optimize expensive black-box functions. 
+It is often used for hyperparameter tuning and model selection.
